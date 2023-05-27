@@ -1,0 +1,116 @@
+:root {
+    --prim-dark-cyan: hsl(185, 75%, 39%);
+    --prim-dark-des-blue: hsl(229, 23%, 23%);
+    --prim-dark-gray-blue: hsl(227, 10%, 46%);
+    --neut-dark-gray: hsl(0, 0%, 59%);
+    --fw-normal: 400;
+    --fw-bold: 700;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+body {
+    background-color: var(--prim-dark-cyan);
+    background-image:
+    url(./images/bg-pattern-top.svg),
+    url(./images/bg-pattern-bottom.svg);
+    background-position:
+    top left,
+    bottom right;
+    background-repeat: no-repeat;
+}
+
+article {
+
+    display: grid;
+    place-content: center;
+    height: 100vh;
+}
+
+section {
+    background-color: white;
+    border-radius: 1rem;
+    -webkit-border-radius: 1rem;
+    -moz-border-radius: 1rem;
+    -ms-border-radius: 1rem;
+    -o-border-radius: 1rem;
+    max-width: 350px;
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+ img.header{
+border-top-left-radius: inherit;
+border-top-right-radius: inherit;
+position: relative;
+}
+
+.imgs-container{
+    position: relative;
+    border-top-left-radius: inherit;
+    border-top-right-radius: inherit;
+}
+
+img.photo {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    position: absolute;
+    left: calc(50% - 48px);
+    bottom: -48px;
+    min-width: 96px;
+    border: white 5px solid;
+}
+
+
+.name-container {
+    margin-top: 48px;
+    padding: 0.6rem;
+}
+
+h1 {
+    display: inline;
+}
+
+hr {
+    border: var(--prim-dark-gray-blue) 1px solid;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+ul {
+    margin-top: 0rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1.5rem 2rem;
+}
+
+li {
+    text-align: center;
+}
+
+.ammount {
+    font-weight: var(--fw-bold);
+}
+
+.type {
+    font-size: 0.6rem;
+    letter-spacing: 1px;
+}
+
+.age, .city, .type {
+    color: var(--prim-dark-gray-blue);
+}
